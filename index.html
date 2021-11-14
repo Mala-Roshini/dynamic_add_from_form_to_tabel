@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>update table based on form input values</title>
+</head>
+<body>
+    <div class="mainDiv">
+    <form class="formClass">
+    <div class="formcontainer">
+        <fieldset id="mainFieldset"><legend>Survey Form</legend>
+        <div>
+            <label for="fname">Full Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address">
+        </div>
+        <div>
+            <label for="pincode">Pincode</label>
+            <input type="text" name="pincode" id="pincode" >
+        </div>
+        <div>
+            <label for="genderSelect">Gender</label><br>
+            <input type="radio" name="genderSelect" class="selectGender" value="Male" id="malegender">Male<br>
+            <input type="radio" name="genderSelect" class="selectGender" value="Female" id="femalegender">Female<br>
+            <input type="radio" name="genderSelect" class="selectGender" value="Others" id="othergender">Others<br>
+        </div>
+        <div id="selectFood">
+        <fieldset id="subFieldset">
+            <legend>Select Food type of your choice</legend>
+        <div>    
+            <input type="checkbox" name="southinidi" id="southindian" value="South Indian" required>
+            <label for="southinidi">South Indian</label>
+        </div>
+        <div>
+            <input type="checkbox" name="northinidi" id="northindian" value="North Indian" required>
+            <label for="northinidi">North Indian</label>
+        </div>
+        <div>
+            <input type="checkbox" name="chine" id="chinese" value="Chinese" required>
+            <label for="chine">Chinese</label>
+        </div>
+        <div>
+            <input type="checkbox" name="itali" id="italian" value="Italian" required>
+            <label for="itali">Italian</label>
+        </div>
+        <div>
+            <input type="checkbox" name="mexi" id="mexican" value="Mexican" required>
+            <label for="mexi">Mexican</label>
+        </div>
+        <div id="checkboxAlert">
+        </div>
+        </fieldset>
+    </div>
+        <div><label for="state" id="stateLabel">State</label>
+            <input type="text" name="state" id="state">
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+        </div>
+
+        <div>
+            <button type="submit" id="submitButton">Submit</button>
+        </div>
+    </fieldset>
+    </div>
+</form>
+   <div class="tableClass" >
+       <fieldset><legend>Dynamic Table</legend>
+       <table class="dynamicTable" border="2">
+           <tr>
+               <th>First Name</th>
+               <th>Last Name</th>
+               <th>Address</th>
+               <th>Pincode</th>
+               <th>Gender</th>
+               <th>Food Choice</th>
+               <th>State</th>
+               <th>Country</th>
+            </tr>
+
+       </table>
+   </div>
+</fieldset>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

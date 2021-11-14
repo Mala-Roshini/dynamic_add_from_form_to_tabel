@@ -1,0 +1,49 @@
+.mainDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.formcontainer{
+    display: grid;
+    grid-template-rows: 9;
+    row-gap: 5px;
+    background-color: rgb(207, 255, 205, 0.5);
+}
+
+.tableClass{
+    background-color: rgba(135, 214, 132, 0.5);   
+}
+
+#address{
+    padding: 14px;
+    margin: 14px;
+}
+
+#pincode{
+    padding: 10px;
+    margin: 10px;
+}
+#stateLabel{
+    padding: 10px;
+}
+#state{
+    padding: 10px;
+    margin: 10px;
+}
+
+#country{
+    padding: 10px;
+    margin: 10px;
+}
+
+#subFieldset{
+    margin-right: 100px;
+}
+
+#submitButton{
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
